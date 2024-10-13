@@ -62,6 +62,7 @@ Create a class called *ShoppingCartDB* to manage the database; the class should 
 
 ## Task 3
 You should save the contents of a shopping cart as text file. If fred has the following items in his cart: apple, orange, pear then his cart will be stored as follows
+
     cartdb/fred.db
     apple
     orange
