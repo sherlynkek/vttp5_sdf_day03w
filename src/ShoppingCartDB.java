@@ -40,9 +40,11 @@ public class ShoppingCartDB {
             System.out.println("Please login first before saving.");
             return;
         }
-        
+
         String userFile = cartDirectory + "/" + currentUser + ".db";
-        Files.write(Paths.get(userFile), cart); // Save cart items to user's file
+
+        // Save cart items, one per line
+        Files.write(Paths.get(userFile), cart);
         System.out.println("Cart saved for user: " + currentUser);
     }
 
